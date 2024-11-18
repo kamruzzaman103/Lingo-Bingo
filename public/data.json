@@ -1,0 +1,223 @@
+[
+    {
+      "Id": "1",
+      "word": "abundance",
+      "pronunciation": "əˈbʌn.dəns",
+      "meaning": "a very large quantity of something",
+      "part_of_speech": "noun",
+      "difficulty": "medium",
+      "Lesson_no": 1,
+      "when_to_say": "To describe a plentiful supply of something",
+      "example": "The garden produced an abundance of fresh vegetables."
+    },
+    {
+      "Id": "2",
+      "word": "benevolent",
+      "pronunciation": "bəˈnev.ə.lənt",
+      "meaning": "well-meaning and kindly",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 2,
+      "when_to_say": "When describing someone who is kind-hearted",
+      "example": "She was a benevolent leader who cared deeply for her team."
+    },
+    {
+      "Id": "3",
+      "word": "camaraderie",
+      "pronunciation": "ˌkæm.əˈrɑː.dər.i",
+      "meaning": "mutual trust and friendship among people",
+      "part_of_speech": "noun",
+      "difficulty": "difficult",
+      "Lesson_no": 3,
+      "when_to_say": "To describe a sense of friendship or fellowship",
+      "example": "The camaraderie among the teammates was evident."
+    },
+    {
+      "Id": "4",
+      "word": "diligent",
+      "pronunciation": "ˈdɪl.ɪ.dʒənt",
+      "meaning": "having or showing care in one's work",
+      "part_of_speech": "adjective",
+      "difficulty": "easy",
+      "Lesson_no": 1,
+      "when_to_say": "To praise someone who works hard and carefully",
+      "example": "She is a diligent student who never misses a deadline."
+    },
+    {
+      "Id": "5",
+      "word": "empathy",
+      "pronunciation": "ˈem.pə.θi",
+      "meaning": "the ability to understand and share others' feelings",
+      "part_of_speech": "noun",
+      "difficulty": "medium",
+      "Lesson_no": 2,
+      "when_to_say": "When referring to understanding someone else's feelings",
+      "example": "His empathy allowed him to support his grieving friend."
+    },
+    {
+      "Id": "6",
+      "word": "frivolous",
+      "pronunciation": "ˈfrɪv.əl.əs",
+      "meaning": "not having any serious purpose or value",
+      "part_of_speech": "adjective",
+      "difficulty": "difficult",
+      "Lesson_no": 3,
+      "when_to_say": "To describe something that is trivial or unimportant",
+      "example": "Her concerns were dismissed as frivolous."
+    },
+    {
+      "Id": "7",
+      "word": "gregarious",
+      "pronunciation": "ɡrɪˈɡeə.ri.əs",
+      "meaning": "fond of company; sociable",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 4,
+      "when_to_say": "When describing someone who enjoys being with others",
+      "example": "He was a gregarious man who loved parties."
+    },
+    {
+      "Id": "8",
+      "word": "hypothetical",
+      "pronunciation": "ˌhaɪ.pəˈθet.ɪ.kəl",
+      "meaning": "based on possible ideas or situations rather than real ones",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 5,
+      "when_to_say": "When discussing something imaginary or speculative",
+      "example": "Let’s consider a hypothetical scenario to understand the concept."
+    },
+    {
+      "Id": "9",
+      "word": "inevitable",
+      "pronunciation": "ɪnˈev.ɪ.tə.bəl",
+      "meaning": "certain to happen; unavoidable",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 2,
+      "when_to_say": "To describe something that is bound to occur",
+      "example": "Change is inevitable in life."
+    },
+    {
+      "Id": "10",
+      "word": "jovial",
+      "pronunciation": "ˈdʒəʊ.vi.əl",
+      "meaning": "cheerful and friendly",
+      "part_of_speech": "adjective",
+      "difficulty": "easy",
+      "Lesson_no": 3,
+      "when_to_say": "To describe someone in a happy and cheerful mood",
+      "example": "He was in a jovial mood at the party."
+    },
+    {
+      "Id": "11",
+      "word": "keen",
+      "pronunciation": "kiːn",
+      "meaning": "having or showing eagerness or enthusiasm",
+      "part_of_speech": "adjective",
+      "difficulty": "easy",
+      "Lesson_no": 1,
+      "when_to_say": "To express strong interest or enthusiasm",
+      "example": "She was keen to start her new job."
+    },
+    {
+      "Id": "12",
+      "word": "lucid",
+      "pronunciation": "ˈluː.sɪd",
+      "meaning": "expressed clearly; easy to understand",
+      "part_of_speech": "adjective",
+      "difficulty": "easy",
+      "Lesson_no": 4,
+      "when_to_say": "To describe something that is clear and comprehensible",
+      "example": "The teacher gave a lucid explanation of the topic."
+    },
+    {
+      "Id": "13",
+      "word": "meticulous",
+      "pronunciation": "məˈtɪk.jə.ləs",
+      "meaning": "showing great attention to detail",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 5,
+      "when_to_say": "To describe someone who is very careful and precise",
+      "example": "Her meticulous approach ensured there were no mistakes."
+    },
+    {
+      "Id": "14",
+      "word": "notorious",
+      "pronunciation": "nəʊˈtɔː.ri.əs",
+      "meaning": "famous for something bad",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 6,
+      "when_to_say": "To describe someone or something infamous",
+      "example": "The city is notorious for its traffic jams."
+    },
+    {
+      "Id": "15",
+      "word": "oblivious",
+      "pronunciation": "əˈblɪv.i.əs",
+      "meaning": "not aware of or concerned about what is happening around one",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 7,
+      "when_to_say": "When someone is unaware or forgetful of something",
+      "example": "She was oblivious to the noise around her."
+    },
+    {
+      "Id": "16",
+      "word": "pragmatic",
+      "pronunciation": "præɡˈmæt.ɪk",
+      "meaning": "dealing with things sensibly and realistically",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 8,
+      "when_to_say": "When emphasizing practicality or real-world solutions",
+      "example": "His pragmatic approach helped solve the problem."
+    },
+    {
+      "Id": "17",
+      "word": "quaint",
+      "pronunciation": "kweɪnt",
+      "meaning": "attractively unusual or old-fashioned",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 8,
+      "when_to_say": "To describe something charmingly old-fashioned",
+      "example": "The quaint cottage was a perfect holiday retreat."
+    },
+    {
+      "Id": "18",
+      "word": "resilient",
+      "pronunciation": "rɪˈzɪl.i.ənt",
+      "meaning": "able to recover quickly from difficulties",
+      "part_of_speech": "adjective",
+      "difficulty": "medium",
+      "Lesson_no": 9,
+      "when_to_say": "To describe someone who can bounce back from setbacks",
+      "example": "She showed resilient strength after the accident."
+    },
+    {
+      "Id": "19",
+      "word": "serendipity",
+      "pronunciation": "ˌser.ənˈdɪp.ɪ.ti",
+      "meaning": "the occurrence of events by chance in a happy or beneficial way",
+      "part_of_speech": "noun",
+      "difficulty": "difficult",
+      "Lesson_no": 9,
+      "when_to_say": "When describing a fortunate accidental discovery",
+      "example": "Finding that book was pure serendipity."
+    },
+    {
+      "Id": "20",
+      "word": "tenacious",
+      "pronunciation": "təˈneɪ.ʃəs",
+      "meaning": "not readily letting go of or giving up",
+      "part_of_speech": "adjective",
+      "difficulty": "difficult",
+      "Lesson_no": 10,
+      "when_to_say": "To describe someone who is determined and persistent",
+      "example": "Her tenacious efforts led to a breakthrough."
+    }
+  ]
+  
