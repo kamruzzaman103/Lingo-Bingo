@@ -1,11 +1,14 @@
 // src/components/Tutorial.jsx
 
-
+import { Link } from "react-router-dom";
 const Tutorial = () => {
   const tutorialVideos = [
-    "https://www.youtube.com/embed/YOUR_VIDEO_ID1",
-    "https://www.youtube.com/embed/YOUR_VIDEO_ID2",
-    "https://www.youtube.com/embed/YOUR_VIDEO_ID3"
+    "https://www.youtube.com/embed/eay5wsKYZww?si=FtrCMPZw-ShfTC-y",
+    "https://www.youtube.com/embed/nzy22LOgzsw?si=wSi3lKNcKB9D7_2h",
+    "https://www.youtube.com/embed/xyVl2NfoTng?si=58WKjxKody96__IT",
+    "https://www.youtube.com/embed/A_qB5yprdWU?si=iE6VetJkeIr8j7zY",
+    "https://www.youtube.com/embed/z3nnWgIwHHg?si=ObOLXUKDdzCUHigd",
+    "https://www.youtube.com/embed/IuziA9RyR88?si=l0Zi1kOgepSVEVQS"
   ];
 
   return (
@@ -24,6 +27,7 @@ const Tutorial = () => {
           ></iframe>
         ))}
       </div>
+      
 
       <Link 
         to="/start-learning" 

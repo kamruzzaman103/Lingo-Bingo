@@ -25,7 +25,7 @@ const LetsLearn = () => {
         <h2 className="text-2xl font-semibold mb-4">Learn the Alphabet</h2>
         <iframe 
           className="mx-auto w-full sm:w-3/4 h-64 sm:h-80 rounded-lg" 
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+          src="https://www.youtube.com/embed/eay5wsKYZww?si=FtrCMPZw-ShfTC-y" 
           title="Alphabet Tutorial"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen 

@@ -37,9 +37,10 @@ const Lesson = () => {
     setModalData(null);
   };
 
-  // Function to pronounce the word using Web Speech API
-  const pronounceWord = (word) => {
+  // Function to pronounce the word with language support
+  const pronounceWord = (word, lang = 'en-US') => {
     const utterance = new SpeechSynthesisUtterance(word);
+    utterance.lang = lang; // Set language for pronunciation
     speechSynthesis.speak(utterance);
   };
 
@@ -49,7 +50,7 @@ const Lesson = () => {
     <div className="p-4">
       <h1 className="text-3xl font-bold mb-4">Lesson {lesson_no}</h1>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {lessonWords.map(word => (
           <div
             key={word.Id}
@@ -62,10 +63,10 @@ const Lesson = () => {
             <p><strong>Pronunciation:</strong> {word.pronunciation}</p>
             <p><strong>Part of Speech:</strong> {word.part_of_speech}</p>
             <button
-              onClick={() => pronounceWord(word.word)}
+              onClick={() => pronounceWord(word.word, 'hi-IN')} // Use Hindi locale
               className="mt-2 bg-blue-500 text-white p-2 rounded"
             >
-              Pronounce
+              Pronounce (Hindi)
             </button>
             <button onClick={() => openModal(word)} className="mt-2 bg-green-500 text-white p-2 rounded">
               When to say
@@ -74,7 +75,7 @@ const Lesson = () => {
         ))}
       </div>
 
-      <Link to="/learn" className="mt-4 block bg-gray-300 text-center p-2 rounded">
+      <Link to="/start-learning" className="mt-4 block bg-gray-300 text-center p-2 rounded">
         Back to Lessons
       </Link>
 
@@ -93,4 +94,5 @@ const Lesson = () => {
     </div>
   );
 };
+
 export default Lesson;
