@@ -3,6 +3,7 @@ import  { useState } from 'react';
 import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { updateProfile } from "firebase/auth"; 
 import { auth } from '../firebase';
 import { toast } from 'react-toastify';
 
@@ -23,9 +24,17 @@ const Register = () => {
       return;
     }
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
+      // Create user
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+  
+      // Update user profile with displayName and photoURL
+      await updateProfile(user, {
+        displayName: name,
+        photoURL: photoUrl,
+      });
+  
       toast.success("Registered successfully!");
-      console.log(name);
       navigate('/');
     } catch (error) {
       toast.error(error.message);

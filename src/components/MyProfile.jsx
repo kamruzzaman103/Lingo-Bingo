@@ -1,7 +1,7 @@
 // src/components/MyProfile.jsx
 import  { useState, useEffect } from 'react';
 import { auth } from '../firebase';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const MyProfile = () => {
   const [user, setUser] = useState(null);
@@ -12,7 +12,7 @@ const MyProfile = () => {
         console.log(user);
         
       if (!user) {
-        navigate('/login');
+        navigate('/my-profile');
       } else {
         setUser(user);
       }
@@ -42,6 +42,7 @@ const MyProfile = () => {
         >
           Logout
         </button>
+        <Link to="/update-profile">Update Your Profile </Link>
       </div>
     )
   );

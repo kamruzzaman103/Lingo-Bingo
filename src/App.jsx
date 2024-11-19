@@ -82,7 +82,7 @@ function App() {
           <Route path="/lessons/:lesson_no" element={<ProtectedRoute><Lesson /></ProtectedRoute>} />
           <Route path="/tutorials" element={<ProtectedRoute><Tutorial /></ProtectedRoute>} />
           <Route path="/my-profile" element={<ProtectedRoute><MyProfile /></ProtectedRoute>} />
-          <Route path="/update-profile" element={<PrivateRoute element={<UpdateProfile />} />} />
+          <Route path="/update-profile" element={<ProtectedRoute ><UpdateProfile /></ProtectedRoute>} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </main>
