@@ -1,6 +1,3 @@
-// src/components/home/ExtraSection.jsx
-
-
 const ExtraSection = () => {
   return (
     <div className="extra-section bg-indigo-600 text-white py-12 px-4">

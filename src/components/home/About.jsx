@@ -1,6 +1,3 @@
-// src/components/home/About.jsx
-
-
 const About = () => {
   return (
     <div className="about-section bg-gray-100 py-12 px-4">

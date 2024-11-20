@@ -1,5 +1,3 @@
-// src/components/LetsLearn.jsx
-
 import { Link } from 'react-router-dom';
 
 const LetsLearn = () => {

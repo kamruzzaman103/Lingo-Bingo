@@ -1,6 +1,3 @@
-// src/components/home/Banner.jsx
-
-
 const Banner = () => {
   return (
     <div className="banner bg-blue-600 text-white py-12">

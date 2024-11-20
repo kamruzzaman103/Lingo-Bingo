@@ -1,5 +1,3 @@
-// src/components/Tutorial.jsx
-
 import { Link } from "react-router-dom";
 const Tutorial = () => {
   const tutorialVideos = [

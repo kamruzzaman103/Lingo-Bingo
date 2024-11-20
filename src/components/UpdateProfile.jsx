@@ -1,4 +1,3 @@
-// src/components/UpdateProfile.jsx
 import  { useState, useEffect } from 'react';
 import { auth } from '../firebase';
 import { updateProfile } from 'firebase/auth';

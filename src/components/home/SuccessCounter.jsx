@@ -1,5 +1,3 @@
-// src/components/home/SuccessCounter.jsx
-
 import CountUp from 'react-countup';
 
 const SuccessCounter = () => {

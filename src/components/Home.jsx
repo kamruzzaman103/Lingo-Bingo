@@ -1,5 +1,3 @@
-// src/components/Home.jsx
-;
 import Banner from './home/Banner';
 import About from './home/About';
 import SuccessCounter from './home/SuccessCounter';
