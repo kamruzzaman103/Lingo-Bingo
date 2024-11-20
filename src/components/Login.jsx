@@ -61,7 +61,7 @@ const Login = () => {
           Login with Google
         </button>
         <p className="text-center">
-          <a href="/forgot-password" className="text-blue-600">Forgot Password?</a>
+          <Link to="/forgot-password" className="text-blue-600">Forgot Password?</Link>
         </p>
         <p>
         Don't have an account? <Link to="/register" className='text-green-600'>Register</Link>
