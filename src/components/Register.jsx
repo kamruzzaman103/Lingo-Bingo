@@ -20,9 +20,18 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     if (password.length < 6) {
-      toast.error("Password must be at least 6 characters long.");
+      toast.error("Password shoud be at least 6 characters");
       return;
-    }
+  }
+
+
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
+
+  if (!passwordRegex.test(password)) {
+      toast.error('At least one upper character, lower character');
+      return;
+  }
+  
     try {
       // Create user
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
@@ -42,8 +51,8 @@ const Register = () => {
   };
 
   return (
-    <div className="register-container p-4">
-      <h1 className="text-3xl font-bold mb-4">Register</h1>
+    <div className="register-container p-4 max-w-lg mx-auto mt-20">
+      <h1 className="text-3xl font-bold mb-4 text-center"> Registration</h1>
       <form onSubmit={handleRegister} className="space-y-4">
         <input
           type="text"
@@ -73,7 +82,8 @@ const Register = () => {
           value={photoUrl}
           onChange={(e) => setPhotoUrl(e.target.value)}
         />
-        <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">Register</button>
+        <button type="submit" className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none
+                focus:ring-green-200 dark:focus:ring-green-800  rounded-lg text-sm px-5 py-2.5 w-full font-bold">Register</button>
         <p>
         Already have an account? <Link to="/login" className='text-red-700'>Login</Link>
       </p>

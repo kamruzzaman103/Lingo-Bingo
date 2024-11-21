@@ -1,10 +1,9 @@
-// src/components/Login.jsx (Updated)
-import  { useState } from 'react';
-import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { auth } from '../firebase';
 import { toast } from 'react-toastify';
+import emailIcone from '../assets/image/email.png';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -34,8 +33,8 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container p-4">
-      <h1 className="text-3xl font-bold mb-4">Login</h1>
+    <div className="login-container p-4 max-w-lg mx-auto mt-24">
+      <h1 className="text-3xl font-bold mb-4 text-center">Login</h1>
       <form onSubmit={handleLogin} className="space-y-4">
         <input
           type="email"
@@ -51,21 +50,25 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">Login</button>
+        <button type="submit" className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none
+                focus:ring-green-200 dark:focus:ring-green-800  rounded-lg text-sm px-5 py-2.5 w-full font-bold">Login</button>
       </form>
       <div className="mt-4">
         <button 
           onClick={handleGoogleLogin} 
-          className="w-full bg-red-600 text-white p-2 rounded mb-2"
-        >
-          Login with Google
+          className="w-full bg-gray-100 text-black p-2 rounded mb-2 flex items-center justify-center font-bold"
+        > 
+          <img src={emailIcone} alt="" className='size-6 mr-2'/>
+          <span>Login with Google</span>
         </button>
-        <p className="text-center">
-          <Link to="/forgot-password" className="text-blue-600">Forgot Password?</Link>
+        <p className="text-center my-2">
+          <Link to={`/forgot-password?email=${encodeURIComponent(email)}`} className="text-blue-600">
+            Forgot Password?
+          </Link>
         </p>
         <p>
-        Don't have an account? <Link to="/register" className='text-green-600'>Register</Link>
-      </p>
+          Don't have an account? <Link to="/register" className='text-green-600'>Register</Link>
+        </p>
       </div>
     </div>
   );

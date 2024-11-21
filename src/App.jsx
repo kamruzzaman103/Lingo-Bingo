@@ -9,7 +9,7 @@ import Lesson from './components/Lesson';
 import Tutorial from './components/Tutorial';
 import MyProfile from './components/MyProfile';
 import UpdateProfile from './components/UpdateProfile';
-// import NotFound from './components/NotFound';
+import NotFound from './components/NotFound';
 import ForgotPassword from './components/ForgotPassword';
 import PrivateRoute from './components/PrivateRoute';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -31,7 +31,7 @@ function App() {
           <Route path="/tutorials" element={<ProtectedRoute><Tutorial /></ProtectedRoute>} />
           <Route path="/my-profile" element={<ProtectedRoute><MyProfile /></ProtectedRoute>} />
           <Route path="/update-profile" element={<ProtectedRoute ><UpdateProfile /></ProtectedRoute>} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

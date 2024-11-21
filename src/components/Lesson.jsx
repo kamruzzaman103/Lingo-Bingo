@@ -47,26 +47,25 @@ const Lesson = () => {
   if (!isAuthenticated) return null;
 
   return (
-    <div className="p-4">
-      <h1 className="text-3xl font-bold mb-4">Lesson {lesson_no}</h1>
+    <div className="p-4 mx-3">
+      <h1 className="text-3xl font-bold mb-4 text-center">Lesson {lesson_no}</h1>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-4">
         {lessonWords.map(word => (
           <div
             key={word.Id}
-            className={`p-4 rounded shadow ${
-              word.difficulty === 'easy' ? 'bg-green-100' : word.difficulty === 'medium' ? 'bg-yellow-100' : 'bg-red-100'
-            }`}
+            className={`p-4 rounded shadow ${word.difficulty === 'easy' ? 'bg-green-100' : word.difficulty === 'medium' ? 'bg-yellow-100' : 'bg-red-100'
+              }`}
           >
             <h2 className="text-xl font-semibold">{word.word}</h2>
             <p><strong>Meaning:</strong> {word.meaning}</p>
             <p><strong>Pronunciation:</strong> {word.pronunciation}</p>
             <p><strong>Part of Speech:</strong> {word.part_of_speech}</p>
             <button
-              onClick={() => pronounceWord(word.word, 'hi-IN')} // Use Hindi locale
-              className="mt-2 bg-blue-500 text-white p-2 rounded"
+              onClick={() => pronounceWord(word.word, 'hi-IN')}
+              className="mt-2 bg-blue-500 text-white p-2 rounded mr-3"
             >
-              Pronounce (Hindi)
+              Pronounce
             </button>
             <button onClick={() => openModal(word)} className="mt-2 bg-green-500 text-white p-2 rounded">
               When to say
@@ -74,10 +73,11 @@ const Lesson = () => {
           </div>
         ))}
       </div>
-
-      <Link to="/start-learning" className="mt-4 block bg-gray-300 text-center p-2 rounded">
-        Back to Lessons
-      </Link>
+      <div className='text-center'>
+        <Link to="/start-learning" className='mt-6 inline-block text-blue-600 font-bold hover:underline'>
+          Back to Lessons
+        </Link>
+      </div>
 
       {/* Modal */}
       {modalData && (

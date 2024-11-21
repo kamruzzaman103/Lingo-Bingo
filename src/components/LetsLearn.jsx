@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const LetsLearn = () => {
   return (
-    <div className="lets-learn-page p-4">
+    <div className="lets-learn-page p-4 mx-3">
       <h1 className="text-3xl font-bold text-center mb-6">Let’s Learn</h1>
       
       {/* Lesson Cards Section */}

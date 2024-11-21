@@ -33,8 +33,8 @@ const UpdateProfile = () => {
   };
 
   return (
-    <div className="update-profile-container p-4">
-      <h1 className="text-3xl font-bold mb-4">Update Profile</h1>
+    <div className="update-profile-container p-4 max-w-lg mx-auto mt-36">
+      <h1 className="text-3xl font-bold mb-4 text-center">Update Profile</h1>
       <form onSubmit={handleUpdateProfile} className="space-y-4">
         <input
           type="text"
@@ -50,7 +50,8 @@ const UpdateProfile = () => {
           value={photoURL}
           onChange={(e) => setPhotoURL(e.target.value)}
         />
-        <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">Update</button>
+        <button type="submit" className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none
+                focus:ring-green-200 dark:focus:ring-green-800  rounded-lg text-sm px-5 py-2.5 w-full font-bold">Update</button>
       </form>
     </div>
   );
